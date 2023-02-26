@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (min-width: 0px), (max-width: 1200px) {
+        * {
+          margin: 0 auto;
+          padding: 0px;
+          box-sizing: border-box;
+          font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+
+        #line1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        #Subscribe {
+          font-size: 20px;
+          color: grey;
+          text-decoration: none;
+        }
+
+        .Large {
+          text-align: center;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          text-decoration: none;
+        }
+
+        #back {
+          text-align: center;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          text-decoration: none;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        #btn {
+          position: absolute;
+          right: 0px;
+          width: 300px;
+          border: 3px solid #bdcca9;
+          padding: 10px;
+        }
+
+        .nav1 {
+          padding-top: 1rem;
+          margin-top: auto;
+        }
+
+        nav {
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+        }
+
+        .nav2 {
+          margin: 10px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        #box1 {
+          background-color: rgb(61, 59, 59);
+          width: 100%;
+          height: 300px;
+          justify-content: center;
+          margin-bottom: 10px;
+          padding: 20px;
+          position: relative;
+          border-radius: 8px;
+        }
+
+        #content2 {
+          font-style: italic;
+          margin-left: 20px;
+          margin-top: 50px;
+          color: aliceblue;
+          font-style: oblique;
+          font-size: 42px;
+          width: 651px;
+        }
+
+        #content3 {
+          font-size: 1.25rem;
+          color: aliceblue;
+
+          height: 90px;
+          text-align: left;
+          font-weight: 300;
+          width: 500px;
+          /* margin-top: 12px;*/
+          margin-left: 20px;
+          /* display: block; */
+          /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "Noto Color Emoji";
+          margin-bottom: 1rem !important;
+        }
+
+        #content4 {
+          /* font-size: 20px;
+          color: aliceblue;
+          width: 350px;
+          margin-top: 12px;*/
+          position: absolute;
+          margin-left: 20px;
+          display: block;
+          color: aliceblue;
+          text-align: left;
+          /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+          /* color: #fff!important; */
+          /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+        }
+
+
+        /* aside{
+          float: right;
+          margin-right: 0;
+          justify-content: right;
+          gap: 200px;
+        } */
+        .box2 {
+          background-color: aliceblue;
+          width: 40%;
+          height: 300px;
+          margin: 20px;
+          border: 1px;
+          padding: 10px;
+          box-shadow: 5px 10px #e4dfdf;
+        }
+
+        .box3 {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+        }
+
+        #box4 {
+          width: 60%;
+          background-color: aliceblue;
+          height: auto;
+          width: 50%;
+  
+        
+        }
+
+        #box5 {
+          /* width: 40%; */
+          background-color: aliceblue;
+          height: auto;
+          padding: 20px;
+          margin-bottom: 20px;
+          width: 100%;
+          float: right;
+                  }
+
+
+.archives{
+  margin: 100px;
+  padding: 100px;
+  justify-content:space-evenly;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+
+
+
+
+
+
+
+        .font1 {
+          font-style: italic;
+          margin-left: 20px;
+          margin-top: 50px;
+          text-align: justify;
+          height: auto;
+        }
+
+        .font2 {
+          margin: 20px;
+          padding: 20px;
+          text-align: justify;
+        }
+
+        .main_container.main1 {
+          display: flex;
+          flex-direction: row;
+          /* gap: 15%; */
+          text-align: justify;
+          
+        }
+
+        #main1 {
+           width: 60%;
+          height: auto;
+       
+          text-align: justify; 
+          width: 50%;
+    float: left;
+    padding: 20px;
+   
+
+        }
+
+        #main2 {
+          width: 50%;
+          height: auto;
+          height: 200px;
+         
+          text-align: justify; 
+          width: 30%;
+    float: left;
+    padding: 20px;
+   
+
+
+          
+        }
+
+        #backtotop {
+          color: #007bff;
+        }
+
+        .btn1 {
+          padding: 10px;
+          border-radius: 8px;
+          margin: 10px;
+          background-color: #007bff;
+        }
+
+        .btn2 {
+          padding: 8px;
+          border-radius: 8px;
+          margin: 8px;
+          background-color: #f8f9fa;
+        }
+
+        #featured {
+          /* col p-4 d-flex flex-column position-static */
+
+          padding: 20px;
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          text-align: left;
+          align-self: flex-left;
+        }
+
+        #thumbnail1 {
+          /* col-auto d-none d-lg-block */
+
+          columns: auto;
+          justify-self: right;
+        }
+
+        #mainbox1 {
+          display: flex;
+          flex-direction: row;
+        }
+
+        #world,
+        #design {
+          padding: 20px;
+          justify-content: space-around;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="line1">
+        <div>
+          <a id="Subscribe" href="#">Subscribe</a>
+        </div>
+        <div>
+          <a class="Large" href="#"> <h1>Large</h1> </a>
+        </div>
+        <div>
+          <a href="#" aria-label="Search">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg> -->
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
+
+      <hr />
+    </header>
+
+
+
+
+
+    
+    <main>
+      <div class="nav1">
+        <nav class="nav2">
+          <a href="#">World</a>
+          <a href="#">U.S</a>
+          <a href="#">Technology</a>
+          <a href="#">Design</a>
+          <a href="#">Culture</a>
+          <a href="#">Busines</a>
+          <a href="#">Politics</a>
+          <a href="#">Opinion</a>
+          <a href="#">Science</a>
+          <a href="#">Health</a>
+          <a href="#">Style</a>
+          <a href="#">Travel</a>
+        </nav>
+      </div>
+
+      <div id="box1">
+        <div>
+          <h1 id="content2">Title of a longer featured blog post</h1>
+          <p id="content3">
+            Multiple lines of text that form the lede, informing new readers
+            quickly and efficiently about what’s most interesting in this post’s
+            contents.
+          </p>
+          <p id="content4"><a href="#">Continue reading...</a></p>
+        </div>
+      </div>
+
+      <!-- -------------------- -->
+      <div class="box3">
+        <div class="box2">
+          <div id="mainbox1">
+            <div id="world">
+              <strong style="margin-bottom: 30px">World</strong>
+              <h3>Featured post</h3>
+              <div style="margin-bottom: 10px">Nov 12</div>
+              <p style="margin-bottom: 20px">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a href="#">Continue reading</a>
+            </div>
+
+            <div lass="col-auto d-none d-lg-block" id="thumbnail1">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <div id="mainbox1">
+            <div id="design">
+              <strong style="margin-bottom: 30px">Design</strong>
+              <h3>Post title</h3>
+              <div style="margin-bottom: 10px">Nov 11</div>
+              <p style="margin-bottom: 20px">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a href="#">Continue reading</a>
+            </div>
+            <div id="thumbnail1">
+              <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- -->
+
+
+
+<!--++++++++++++ -->
+<!-- +++++++++++++++++++++++++++++++++++ -->
+<main role="main" class="main_container">
+  <div class="row" id="main1">
+    <div class="col-md-8 blog-main" class="font1">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        From the Firehose
+      </h3>
+
+      <div class="blog-post" >
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <h2>Heading</h2>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <h3>Sub-heading</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <pre><code>Example code block</code></pre>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+        <h3>Sub-heading</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+        <ol>
+          <li>Vestibulum id ligula porta felis euismod semper.</li>
+          <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+          <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+        </ol>
+        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+      </div><!-- /.blog-post -->
+    </div>
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar" id="main2">
+      <div class="p-4 mb-3 bg-light rounded"  id="box5">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      
+
+
+    </div>
+    <div class="p-4" >
+      <h4 class="font-italic" class="archives">Archives</h4>
+      <ol class="list-unstyled mb-0">
+        <li><a href="#">March 2014</a></li>
+        <li><a href="#">February 2014</a></li>
+        <li><a href="#">January 2014</a></li>
+        <li><a href="#">December 2013</a></li>
+        <li><a href="#">November 2013</a></li>
+        <li><a href="#">October 2013</a></li>
+        <li><a href="#">September 2013</a></li>
+        <li><a href="#">August 2013</a></li>
+        <li><a href="#">July 2013</a></li>
+        <li><a href="#">June 2013</a></li>
+        <li><a href="#">May 2013</a></li>
+        <li><a href="#">April 2013</a></li>
+      </ol>
+    </div>
+
+    <div class="p-4">
+      <h4 class="font-italic">Elsewhere</h4>
+      <ol class="list-unstyled">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ol>
+    </div>
+    </aside><!-- /.blog-sidebar -->
+
+  <!-- /.row -->
+
+
+  
+
+</main>
+<!-- /.container -->
+
+<!-- ================================================ -->
+
+<footer class="blog-footer" id="back">
+  <p>
+    Blog template built for
+    <a id="backtotop" href="https://getbootstrap.com/">Bootstrap</a> by
+    <a id="backtotop" href="#">@mdo</a>.
+  </p>
+  <p>
+    <a href="#" id="backtotop">Back to top </a>
+  </p>
+</footer> 
+
+
+
+
+
+   
+
+  </body>
+</html>
+
+
+
+
+
